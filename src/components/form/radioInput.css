@@ -1,0 +1,22 @@
+.radio-input-wrapper {
+}
+
+.radio-option-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+fieldset {
+  border: none;
+  margin-top: 1.8rem;
+}
+legend {
+  font-weight: 600;
+}
+
+.input-radio {
+}
+
+.label-radio {
+  font-weight: 300;
+}

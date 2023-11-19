@@ -1,0 +1,63 @@
+.text-input-wrapper {
+  margin-top: 2rem;
+}
+
+label {
+  font-weight: 600;
+}
+input {
+  margin: 0.8rem 0rem;
+  display: block;
+  outline: none;
+  border: 1px solid rgb(207, 212, 217);
+  padding: 1rem;
+  width: 100%;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-icon {
+  position: absolute;
+  height: 100%;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+input.input-error {
+  margin-top: 0.2rem;
+  display: block;
+  outline: none;
+  border: 1px solid rgb(219, 2, 2);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid black;
+}
+
+input.input-error:focus {
+  outline: none;
+  border: 1px solid rgb(219, 2, 2);
+}
+
+.error {
+  color: rgb(219, 2, 2);
+  margin-left: 2px;
+}
+
+.asterisk {
+  color: red;
+  margin-left: 0.2rem;
+}
+
+.description {
+  display: inline-block;
+  color: grey;
+  font-weight: 100;
+  margin-left: 0.5rem;
+}
