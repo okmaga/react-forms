@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Signin from "./layout/Signin";
 import Signup from "./layout/Signup";
-import "./app.css";
+import "./App.css";
 
 const App = () => {
   const [signIn, setSignIn] = useState(true);
@@ -12,11 +12,15 @@ const App = () => {
   return (
     <div className="App">
       <div>
-        <button onClick={() => setSignIn(prev => !prev)}>{signIn ? "Don't have an account? Sign up" : "Log in"}</button>
+        <button onClick={() => setSignIn((prev) => !prev)}>
+          {signIn ? "Don't have an account? Sign up" : "Log in"}
+        </button>
       </div>
-      {signIn ?
+      {signIn ? (
         <Signin onSubmit={handleSubmit} />
-        : <Signup onSubmit={handleSubmit} /> }
+      ) : (
+        <Signup onSubmit={handleSubmit} />
+      )}
     </div>
   );
 };
